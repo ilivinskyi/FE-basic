@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
+<div class="container">
+    <h2>Welcome to our super website</h2>
+    <p>Please log in or register to continue</p>
+    <button class="login-button" onclick="showModal()">Login</button>
+    <div id="modal" class="login-modal">
+        <div class="modal-content">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+                <br>
+                <h2 class="title-text">Login | <span style="color: forestgreen">Register</span></h2>
+                <div class="registration-form">
+                    <form>
+                        <span class="hint-message">Enter your email and password to register.</span>
+                        <input type="text" required placeholder="Username">
+                        <input type="email" required placeholder="Email">
+                        <div class="password-container">
+                            <input id="password" class="password-field" type="password" required placeholder="Password">
+                            <span class="toggle-password">
+                                <img id="eye-icon" src="img/eye-closed.svg" alt="Toggle Password Visibility"
+                                     onclick="togglePasswordVisibility()">
+                            </span>
+                        </div>
+                        <input type="password" required placeholder="Confirm Password">
+                        <input type="submit" class="register-button" value="Register">
+                    </form>
+                </div>
+                <div class="social-buttons">
+                    <div class="social-section">
+                        <div class="left-line"></div>
+                        <span class="social-section-title">Or register with</span>
+                        <div class="right-line"></div>
+                    </div>
+                    <div class="buttons-block">
+                        <button class="social-button google-button" type="button" onclick="signupWithGoogle()">
+                            <img src="img/google.svg" alt="google icon">
+                            <span>Continue with Google</span>
+                        </button>
+                        <button class="social-button facebook-button" type="button" onclick="signupWithFacebook()">
+                            <img src="img/facebook.svg" alt="google icon">
+                            <span>Continue with Facebook</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="bottom-line">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

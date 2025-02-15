@@ -1,0 +1,190 @@
+@font-face {
+    font-family: ceraPro;
+    src: url("fonts/cera-pro-demo.otf");
+}
+
+body {
+    background: blanchedalmond;
+    font-family: ceraPro, sans-serif;
+}
+
+.login-modal {
+    display: none;
+    background: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 656px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.close-button {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 469px;
+    top: 13px;
+    cursor: pointer;
+    color: #46A358;
+    font-size: 25px;
+
+
+
+}
+
+.login-button {
+    background-color: darkseagreen;
+    color: white;
+    width: 125px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.title-text {
+    text-align: center;
+}
+
+input {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    left: 100px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    padding-right: 40px;
+}
+
+input::placeholder {
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    font-family: 'Cera Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A5A5A5;
+}
+
+.password-container {
+    position: relative;
+    left: 100px;
+    width: 300px;
+}
+
+.password-field {
+    left: 0;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.hint-message {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #3D3D3D;
+    display: table;
+    margin: 15px auto 15px 100px;
+}
+
+.register-button {
+    width: 300px;
+    height: 45px;
+    color: white;
+    background-color: #46A358;
+    border-radius: 5px;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 30px;
+}
+
+.social-buttons {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.social-section-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #3D3D3D;
+    white-space: nowrap;
+}
+
+.right-line, .left-line {
+    flex-grow: 1;
+    height: 1px;
+    background: #EAEAEA;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    background-color: white;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+.social-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.facebook-button {
+    margin-bottom: 50px;
+}
+
+.bottom-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.bottom-line hr {
+    width: 100%;
+    height: 10px;
+    background-color: #46A358;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
